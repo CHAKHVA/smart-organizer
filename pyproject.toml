@@ -3,8 +3,12 @@ name = "smart-organizer"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+authors = [{ name = "chakhva", email = "aleksandre.chakhvashvili24@gmail.com" }]
 requires-python = ">=3.13"
 dependencies = ["aiofiles>=24.1.0", "pytest>=8.3.5", "typer>=0.15.4"]
+
+[project.scripts]
+smart-organizer = "smart_organizer.main:app"
 
 [build-system]
 requires = ["hatchling"]
